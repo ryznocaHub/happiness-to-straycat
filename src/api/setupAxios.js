@@ -5,11 +5,15 @@ export default function setupAxios(axios) {
   // setup axios interceptors request
   axios.interceptors.request.use(
     (request) => {
+      request.headers = {
+        ...request.headers,
+        "Access-Control-Allow-Origin": "*",
+      }
       const token = useAuthStore.getState().token;
-
       if (token) {
         request.headers.Authorization = token;
       }
+      console.log("req", request.headers)
       return request;
     },
     (error) => {

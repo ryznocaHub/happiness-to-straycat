@@ -1,17 +1,10 @@
 import Login from "./auth/Login"
+import { Register } from "./auth/register"
 import { IndexPet } from "./pet/IndexPet"
-import { ShowUser } from "./user/ShowUser"
-
-
-const User = {
-    "Show" : <ShowUser/>
-}
-const Pet = {
-    "Index" : <IndexPet/>
-}
-
+import User from "./user"
 const Auth = {
-    "Login" : <Login/>
+    "Login" : <Login/>,
+    "Register" : <Register/>
 }
 
-export {Auth, User, Pet}
+export {Auth, User, IndexPet}

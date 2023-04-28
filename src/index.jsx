@@ -4,6 +4,7 @@ import {
     RouterProvider,
   } from "react-router-dom";
 import '@assets/css/App.css'
+import '@assets/scss/index.scss'
 //theme
 import "primereact/resources/themes/lara-light-indigo/theme.css";     
 //core

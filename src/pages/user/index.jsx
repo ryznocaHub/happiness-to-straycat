@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const ShowUser = () => {
+const User = () => {
   return (
     <div>user</div>
   )
 }
+
+export default User

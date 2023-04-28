@@ -1,0 +1,21 @@
+/* General */
+$borderRadius:12px;             /* border radius of layout element e.g. card, sidebar */ 
+$transitionDuration:.2s;        /* transition duration of layout elements e.g. sidebar, overlay menus */ 
+
+.card {
+    background: var(--surface-card);
+    border: 1px solid var(--surface-border);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--card-shadow);
+    border-radius: $borderRadius;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.header-page {
+    font-size: 1.9rem;
+    font-weight: 900;
+}
